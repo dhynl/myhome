@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:text-align="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,10 +14,10 @@
 </head>
 
 <body>
-<div style="font-size: 10px;" class="container-fluid mt-3 p-3">
-<h5 style="text-align: center;">취업 정보 계정 만들기</h5>
+<div class="container-xl p-1">
+<h3 style="text-align: center;">취업 정보 계정 만들기</h3>
 <hr>
-<div style="font-size: 10px;"><span class="p">*</span> 필수 입력 항목</div><br>
+<span class="p">*</span> 필수 입력 항목<br><br>
 
 <form name="resume" method="post">
     <div id="txt_input">
@@ -26,21 +26,21 @@
             <div class="col-sm-6">
 
         <label for="student_name">이 름<span class="p">*</span></label><br>
-        <input type="text" id="student_name" size="75" name="name"><br>
+        <input type="text" class="form-control" id="student_name" name="name"><br>
         <label for="email">이메일<span class="p">*</span></label><br>
-        <input type="email" name="email" id="email" size="75" placeholder="id@domain_name"><br>
+        <input type="email" class="form-control" name="email" id="email" placeholder="id@domain_name"><br>
         <label for="pwd">암호<span class="p">*</span></label><br>
-        <input type="password" id="pwd" size="75" placeholder="암호"><br>
+        <input type="password" class="form-control" id="pwd" placeholder="암호"><br>
         <label for="pwd2">암호 확인<span class="p">*</span></label><br>
-        <input type="password" id="pwd2" size="75" placeholder="암호 확인"><br>
+        <input type="password" class="form-control" id="pwd2" placeholder="암호 확인"><br>
                 </div>
             <div class="col-sm-6">
         <label for="phone">모바일 폰<span class="p">*</span></label><br>
-        <input type="tel" name="phone" id="phone" size="75" placeholder="010-0000-0000"><br>
+        <input type="tel" class="form-control" name="phone" id="phone" placeholder="010-0000-0000"><br>
         <label for="homepage">개인 홈페이지 </label><br>
-        <input type="url" name="homepage" id="homepage" size="75" placeholder="http://"><br>
+        <input type="url" class="form-control" name="homepage" id="homepage" placeholder="http://"><br>
         <label for="address">주소<span class="p">*</span></label><br>
-        <input type="text" id="address" size="75"><br>
+        <input type="text" class="form-control" id="address"><br>
                 </div>
         </div>
         <br>
@@ -50,19 +50,19 @@
             <div class="col-sm-6">
 
         <label for="school">학교 명<span class="p">*</span></label><br>
-        <input type="text" id="school" size="12"><br>
+        <input type="text" class="form-control" id="school"><br>
         <label for="major">전 공<span class="p">*</span></label><br>
-        <input type="text" id="major" size="12"><br>
+        <input type="text" class="form-control" id="major"><br>
                 </div>
             <div class="col-sm-6">
         <label for="grad">졸업 여부<span class="p">*</span></label><br>
-        <select name="graduate" id="grad">
-            <option value="0">---선택---</option>
-            <option value="1">졸업예정</option>
-            <option value="2">졸업</option>
+        <select name="graduate" id="grad" class="form-control">
+            <option value="0">--- 선택 ---</option>
+            <option value="1">졸업 예정</option>
+            <option value="2">졸 업</option>
         </select><br>
         <label for="grad_sch">졸업(예정)년도 </label><br>
-        <input type="date" id="grad_sch"><br>
+        <input type="date" id="grad_sch" class="form-control"><br>
             </div>
             </div>
         <br>
@@ -70,18 +70,18 @@
         <p class="container-xl p-1 bg-secondary text-white">업무 경력</p>
 
         <p>최종 직위
-        <label><input type="radio" checked> 사원급</label>
-        <label><input type="radio"> 대리 ~ 과장</label>
-        <label><input type="radio"> 차장급 이상</label>
-        <label><input type="radio"> 임원급</label></p>
+        <label class="form-check-label"><input type="radio" class="form-check-input" checked> 사원급
+        <input type="radio" class="form-check-input"> 대리 ~ 과장
+        <input type="radio" class="form-check-input"> 차장급 이상
+            <input type="radio" class="form-check-input"> 임원급</label></p>
 
         <div class="mb-3">
             <label for="comment" class="form-label">주요 담당 업무</label>
-            <textarea style="font-size: 10px;" rows="10" class="form-control" id="comment" name="text">담당했던 주요 업무를 기술하시오.</textarea><br>
+            <textarea rows="10" class="form-control" id="comment" name="text">담당했던 주요 업무를 기술하시오.</textarea><br>
 
         <span class="s">
-            <button style="font-size: 10px;" type="button" class="btn btn-outline-primary">제 출</button>
-            <button style="font-size: 10px;" type="button" class="btn btn-outline-primary">재작성</button>
+            <button type="button" class="btn btn-outline-primary">제 출</button>
+            <button type="button" class="btn btn-outline-primary">재작성</button>
         </span>
         </div>
     </div>
