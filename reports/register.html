@@ -9,7 +9,7 @@
     <style>
         label {display: inline-block;}
         .p {color: red;}
-        .s {margin-left: 200px;}
+        .s {margin-left: 300px;}
     </style>
 </head>
 
@@ -21,30 +21,31 @@
 
 <form name="resume" method="post">
     <div id="txt_input">
-        <p class="bg-primary text-white">기본 정보</p>
+        <p class="container-xl p-1 bg-primary text-white">기본 정보</p>
         <div class="row">
             <div class="col-sm-6">
 
         <label for="student_name">이 름<span class="p">*</span></label><br>
-        <input type="text" id="student_name" name="name"><br>
+        <input type="text" id="student_name" size="75" name="name"><br>
         <label for="email">이메일<span class="p">*</span></label><br>
-        <input type="email" name="email" id="email" size="15" placeholder="id@domain_name"><br>
+        <input type="email" name="email" id="email" size="75" placeholder="id@domain_name"><br>
         <label for="pwd">암호<span class="p">*</span></label><br>
-        <input type="password" id="pwd" size="12"><br>
+        <input type="password" id="pwd" size="75" placeholder="암호"><br>
         <label for="pwd2">암호 확인<span class="p">*</span></label><br>
-        <input type="password" id="pwd2" size="12"><br>
+        <input type="password" id="pwd2" size="75" placeholder="암호 확인"><br>
                 </div>
             <div class="col-sm-6">
         <label for="phone">모바일 폰<span class="p">*</span></label><br>
-        <input type="tel" name="phone" id="phone" size="13" placeholder="010-0000-0000"><br>
+        <input type="tel" name="phone" id="phone" size="75" placeholder="010-0000-0000"><br>
         <label for="homepage">개인 홈페이지 </label><br>
-        <input type="url" name="homepage" id="homepage" size="30" placeholder="http://"><br>
+        <input type="url" name="homepage" id="homepage" size="75" placeholder="http://"><br>
         <label for="address">주소<span class="p">*</span></label><br>
-        <input type="text" id="address" size="30"><br>
+        <input type="text" id="address" size="75"><br>
                 </div>
         </div>
+        <br>
 
-        <p class="bg-success text-white">학 력</p>
+        <p class="container-xl p-1 bg-success text-white">학 력</p>
             <div class="row">
             <div class="col-sm-6">
 
@@ -64,8 +65,9 @@
         <input type="date" id="grad_sch"><br>
             </div>
             </div>
+        <br>
 
-        <p class="bg-secondary text-white">업무 경력</p>
+        <p class="container-xl p-1 bg-secondary text-white">업무 경력</p>
 
         <p>최종 직위
         <label><input type="radio" checked> 사원급</label>
